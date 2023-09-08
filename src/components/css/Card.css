@@ -1,0 +1,12 @@
+#Container{
+    display: flex;
+    justify-content: space-between;
+    padding: 37px;
+    color: #FFFFFF;
+}
+#Container>div{
+    width: 279px;
+    height: 188px;
+    background-color: #390554;
+    border-radius: 10px;
+}

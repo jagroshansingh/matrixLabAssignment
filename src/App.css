@@ -1,0 +1,38 @@
+*{
+  border: 1px solid;
+}
+
+#mainBody{
+  display: flex;
+  height: 913px;
+}
+#mainBody>div{
+  height: 913px;
+  
+}
+
+#footer{
+  height: 68px;
+}
+
+#sidePanel{
+  width: 288px;
+  background-color: rgb(40, 41, 40);
+  border-radius: 0 20px 0 0;
+}
+
+#mainPanel{
+  width: 100%;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
