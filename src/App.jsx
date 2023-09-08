@@ -18,7 +18,13 @@ function App() {
   return (
     <div>
       <div id="mainBody">
-        <div id="sidePanel"></div>
+        <div id="sidePanel">
+          <div>
+            
+          </div>
+          <div></div>
+          <div></div>
+        </div>
         <div id="mainPanel">
           <div id="navbar">
             <input type="search" name="" id="" />
