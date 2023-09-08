@@ -39,7 +39,7 @@ img {
   position: absolute;
   top: 0;
   z-index: -1;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 #cardsContainer {
@@ -125,29 +125,68 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   padding-left: 20px;
-color: white;
+  color: white;
 }
 
-#footer{
+#footer {
   height: 6vh;
   background-color: rgba(243, 0, 80, 1);
   z-index: 3;
   width: 100%;
 }
+#nft {
+  display: none;
+}
 
-
-@media screen and (max-width:400px){
-  #sidePanel{
+@media screen and (max-width: 400px) {
+  #mainBody {
+    padding: 60px 20px 0px 20px;
+  }
+  #sidePanel {
     display: none;
   }
-  input{
-    width: 60vw;
+  input {
+    width: 87vw;
+    height: 30px;
   }
-  button{
+  button {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 20px;
     width: 83px;
     height: 27px;
+  }
+  #cardsContainer {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 68.5vh;
+  }
+  h3 {
+    padding-left: 0;
+  }
+  #navbar {
+    padding: 0;
+  }
+  #search {
+    translate: -10px 50px;
+  }
+  #mainBody {
+    height: 85vh;
+  }
+  #mainBody > div {
+    height: 85vh;
+  }
+  #nft {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: flex;
+    color: white;
+    padding: 0 0 0 20px;
+    gap: 10px;
+  }
+  #nft > p {
+    font-size: 16px;
+    font-weight: 400;
   }
 }
