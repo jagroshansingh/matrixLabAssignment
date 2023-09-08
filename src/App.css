@@ -4,11 +4,11 @@
 
 #mainBody {
   display: flex;
-  height: 913px;
+  height: 713px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 #mainBody > div {
-  height: 913px;
+  height: 713px;
 }
 
 #footer {
@@ -23,7 +23,6 @@
 }
 
 #mainPanel {
-  /* width: 100%; */
   width: 1224px;
 }
 
@@ -36,6 +35,7 @@
 
 img {
   width: 100%;
+  height: 100vh;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -43,7 +43,7 @@ img {
 
 #cardsContainer {
   overflow: auto;
-  height: 800px;
+  height: 558px;
 }
 
 .logo {
@@ -101,10 +101,35 @@ button:hover {
 }
 
 h2 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+#search {
+  background: none;
+  translate: -40px 4px;
+  width: auto;
+}
+#search > svg {
+  width: 18px;
+  height: 18px;
+}
+
+h3 {
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 20px;
+  color: white;
+}
+
+#footer {
+  height: 44px;
+  background-color: rgba(243, 0, 80, 1);
+  z-index: 3;
+  width: 100%;
 }

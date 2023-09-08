@@ -10,9 +10,6 @@
   height: 188px;
   background-color: #390554;
   border-radius: 10px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
 }
 #Container>div>div:first-child{
     height: 157px;
@@ -21,7 +18,6 @@ table {
   padding: 32px 0px 0px 32px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  /* height: 157px; */
   width: 90%;
 }
 
@@ -32,9 +28,7 @@ tr {
 td {
   font-weight: 500;
 }
-td:nth-last-child(1){
-    /* padding-left: 35px; */
-}
+
 th {
   color: #ffffff;
   font-size: 16px;
