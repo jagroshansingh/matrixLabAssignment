@@ -6,16 +6,17 @@ import { MdOutlineToken } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Card } from "./components/Card";
+import { useWeb3Modal } from '@web3modal/react'
 
 function App() {
   const [data, setData] = React.useState([]);
   const [search, setSearch] = React.useState("");
   const [type, setType] = React.useState("Token");
   const [api,setApi]=React.useState('https://api.dexscreener.com/latest/dex/tokens/')
-  
+  const { open, close } = useWeb3Modal()
+
 
   data.sort((a,b)=>b.priceUsd-a.priceUsd)    // for putting in decending order 
-  console.log(data)
 
   function fetchData() {
     axios({
@@ -94,7 +95,7 @@ function App() {
                 <AiOutlineSearch />
               </button>
             </div>
-            <button>Connect</button>
+            <button onClick={()=>open()}>Connect</button>
           </div>
           <h3>{type} Search Results</h3>
           <div id="cardsContainer">
