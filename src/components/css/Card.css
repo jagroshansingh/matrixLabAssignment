@@ -56,3 +56,13 @@ th {
     width: 24px;
     height: 24px;
 }
+
+
+@media screen and (max-width:400px){
+    #Container{
+        display: grid;
+    }
+    #Container>div{
+        width: 85vw;
+    }
+}

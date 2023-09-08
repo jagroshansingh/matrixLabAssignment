@@ -28,7 +28,6 @@ export const Card = ({ details }) => {
             <tbody>
               <tr>
                 <td>Pair created at</td>
-                {/* <td>{details.pairCreatedAt}</td> */}
                 <td>{new Date(details.pairCreatedAt).toLocaleDateString()}</td>
               </tr>
               <tr>

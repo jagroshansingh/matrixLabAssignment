@@ -4,11 +4,11 @@
 
 #mainBody {
   display: flex;
-  height: 713px;
+  height: 94vh;
   background-color: rgba(0, 0, 0, 0.4);
 }
 #mainBody > div {
-  height: 713px;
+  height: 94vh;
 }
 
 #footer {
@@ -34,16 +34,17 @@
 }
 
 img {
+  height: 94vh;
   width: 100%;
-  height: 100vh;
   position: absolute;
   top: 0;
   z-index: -1;
+  object-fit:cover;
 }
 
 #cardsContainer {
   overflow: auto;
-  height: 558px;
+  height: 73.5vh;
 }
 
 .logo {
@@ -124,12 +125,29 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   padding-left: 20px;
-  color: white;
+color: white;
 }
 
-#footer {
-  height: 44px;
+#footer{
+  height: 6vh;
   background-color: rgba(243, 0, 80, 1);
   z-index: 3;
   width: 100%;
+}
+
+
+@media screen and (max-width:400px){
+  #sidePanel{
+    display: none;
+  }
+  input{
+    width: 60vw;
+  }
+  button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 83px;
+    height: 27px;
+  }
 }
