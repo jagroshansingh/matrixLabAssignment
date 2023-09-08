@@ -1,45 +1,110 @@
-*{
-  border: 1px solid;
+* {
+  border: 0px solid;
 }
 
-#mainBody{
+#mainBody {
   display: flex;
   height: 913px;
   background-color: rgba(0, 0, 0, 0.4);
 }
-#mainBody>div{
+#mainBody > div {
   height: 913px;
-  
 }
 
-#footer{
+#footer {
   height: 68px;
 }
 
-#sidePanel{
+#sidePanel {
   width: 288px;
   background-color: rgb(40, 41, 40);
   border-radius: 0 20px 0 0;
+  color: white;
 }
 
-#mainPanel{
-  width: 100%;
+#mainPanel {
+  /* width: 100%; */
+  width: 1224px;
 }
 
-#navbar{
+#navbar {
   display: flex;
   justify-content: space-between;
+  padding: 27px 65px 0 65px;
+  font-family: "Poppins", sans-serif;
 }
 
-img{
+img {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
-  
 }
 
-#cardsContainer{
+#cardsContainer {
   overflow: auto;
   height: 800px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-left: 35px;
+}
+
+.logo > svg {
+  width: 25px;
+  height: 29px;
+}
+
+.logo > p {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input {
+  width: 435px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+input::placeholder {
+  padding-left: 15px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+button {
+  width: 156px;
+  height: 52px;
+  background: linear-gradient(95.24deg, #7c0f35 7.59%, #581266 104.01%);
+  border-radius: 20px;
+  color: white;
+}
+button::content {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+button:hover {
+  cursor: pointer;
+}
+
+#token {
+  background: #f30050;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
 }
